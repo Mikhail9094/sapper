@@ -1,0 +1,17 @@
+@import "../../scss/variables.scss";
+
+.wrapper {
+  width: fit-content;
+}
+
+.links {
+  padding: 3px;
+  width: 250px;
+}
+
+.game {
+  width: fit-content;
+  padding: 5px 10px;
+  background: $main-color;
+  box-sizing: border-box;
+}

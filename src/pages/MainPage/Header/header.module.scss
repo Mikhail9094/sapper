@@ -1,0 +1,58 @@
+@import "../../../scss/variables.scss";
+
+.header {
+  
+  padding: 5px 10px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $main-color;
+
+  border-style: inset;
+  border-width: 4px;
+  border-color: $main-border-color;
+
+  &__number-mines {
+    padding: 1px;
+    width: 70px;
+    height: 44px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    background: black;
+    border-style: inset;
+    border-width: 3px;
+    border-color: $main-border-color;
+
+    color: red;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+
+  &__button-restart {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $main-color;
+
+    border-style: outset;
+    border-width: 2px;
+    border-color: $main-border-color;
+
+    cursor: pointer;
+
+    &:active {
+      border-style: inset;
+    }
+
+    & img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

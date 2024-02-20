@@ -1,0 +1,36 @@
+@import "../../../scss/variables.scss";
+
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  height: 299px;
+  position: absolute;
+  bottom: 45px;
+  background: $main-color;
+  border: 2px solid #929292;
+  z-index: 20;
+
+  &__header {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    color: white;
+    background: rgb(12, 113, 207);
+  }
+
+  &__level {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  &__footer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

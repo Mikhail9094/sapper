@@ -1,0 +1,13 @@
+.basic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      width: fit-content;
+      padding: 5px 0;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+  }

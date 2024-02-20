@@ -1,0 +1,38 @@
+.wrapper {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background: rgba(171, 205, 243, 0.3);
+}
+
+.modal {
+  width: 300px;
+  height: 400px;
+  background: white;
+
+  &__result {
+    text-align: center;
+    color: green;
+    font-size: 30px;
+  }
+
+  &__save {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+}

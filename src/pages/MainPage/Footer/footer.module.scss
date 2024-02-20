@@ -1,0 +1,38 @@
+@import "../../../scss/variables.scss";
+
+.footer {
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: $main-color;
+
+    border-style: outset;
+    border-width: 2px;
+    border-color: $main-border-color;
+
+    cursor: pointer;
+
+    &:active {
+      border-style: inset;
+    }
+
+    & img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.buttons-settings {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}

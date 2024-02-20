@@ -1,0 +1,29 @@
+.button {
+  width: fit-content;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  background: #ccc;
+
+  border-style: outset;
+  border-width: 2px;
+  border-color: #faf8f8;
+
+  cursor: pointer;
+
+  &:active {
+    border-style: inset;
+  }
+
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.allData {
+  gap: 5px;
+}

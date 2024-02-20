@@ -1,0 +1,60 @@
+@import "../../../../scss/variables.scss";
+
+.itemField {
+  width: 28px;
+  height: 28px;
+  background: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-style: outset;
+  border-width: 1px;
+  border-color: $main-border-color;
+  cursor: pointer;
+
+  &:active {
+    border-style: inset;
+  }
+
+  & img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.mine {
+  background: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.dark-blue {
+  color: darkblue;
+}
+
+.brown {
+  color: brown;
+}
+
+.turquoise {
+  color: turquoise;
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
