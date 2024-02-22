@@ -19,6 +19,7 @@ function Field() {
   } = useContext(GameContext);
 
   useEffect(() => {
+    if (game.status==="waitingStart") setMineField([]);
     if (mineField.length === game.fieldSize.mines) {
       const minesField = mineField.filter((item) => game.field[item[1]][item[0]] !== Mask.Mine);
       if (minesField.length === 0) {
