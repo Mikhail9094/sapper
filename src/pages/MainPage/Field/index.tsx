@@ -21,12 +21,17 @@ function Field() {
   useEffect(() => {
     if (game.status==="waitingStart") setMineField([]);
     if (mineField.length === game.fieldSize.mines) {
+      console.log("mines: ", game.mines);
       const minesField = mineField.filter((item) => game.field[item[1]][item[0]] !== Mask.Mine);
       if (minesField.length === 0) {
         completeGameSuccessfully();
         stopTimer();
       }
     }
+
+    console.log("ghbdtn");
+    console.log("mineField: ", mineField);
+    console.log("mines: ", game.fieldSize.mines);
   }, [game.mines]);
 
   const stopGame = () => {
